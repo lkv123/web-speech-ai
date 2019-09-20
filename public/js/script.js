@@ -48,8 +48,8 @@ function synthVoice(text) {
 }
 
 socket.on('bot reply', function(replyText) {
-  synthVoice(replyText);
-
+  //synthVoice(replyText);
+sayText(replyText,3,1,4);
   if(replyText == '') replyText = '(No answer...)';
   outputBot.textContent = replyText;
 });
